@@ -1,0 +1,179 @@
+\begin{thebibliography}{24}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abadi et~al.(2015)Abadi, Agarwal, Barham, Brevdo, Chen, Citro,
+  Corrado, Davis, Dean, Devin, Ghemawat, Goodfellow, Harp, Irving, Isard, Jia,
+  Jozefowicz, Kaiser, Kudlur, Levenberg, Man\'{e}, Monga, Moore, Murray, Olah,
+  Schuster, Shlens, Steiner, Sutskever, Talwar, Tucker, Vanhoucke, Vasudevan,
+  Vi\'{e}gas, Vinyals, Warden, Wattenberg, Wicke, Yu, and
+  Zheng]{tensorflow2015-whitepaper}
+Mart\'{\i}n Abadi, Ashish Agarwal, Paul Barham, Eugene Brevdo, Zhifeng Chen,
+  Craig Citro, Greg~S. Corrado, Andy Davis, Jeffrey Dean, Matthieu Devin,
+  Sanjay Ghemawat, Ian Goodfellow, Andrew Harp, Geoffrey Irving, Michael Isard,
+  Yangqing Jia, Rafal Jozefowicz, Lukasz Kaiser, Manjunath Kudlur, Josh
+  Levenberg, Dan Man\'{e}, Rajat Monga, Sherry Moore, Derek Murray, Chris Olah,
+  Mike Schuster, Jonathon Shlens, Benoit Steiner, Ilya Sutskever, Kunal Talwar,
+  Paul Tucker, Vincent Vanhoucke, Vijay Vasudevan, Fernanda Vi\'{e}gas, Oriol
+  Vinyals, Pete Warden, Martin Wattenberg, Martin Wicke, Yuan Yu, and Xiaoqiang
+  Zheng.
+\newblock {TensorFlow}: Large-scale machine learning on heterogeneous systems,
+  2015.
+\newblock URL \url{http://tensorflow.org/}.
+\newblock Software available from tensorflow.org.
+
+\bibitem[Ajroldi(2024)]{ajroldi2024plainlm}
+Niccolò Ajroldi.
+\newblock plainlm: Language model pretraining in pytorch.
+\newblock \url{https://github.com/Niccolo-Ajroldi/plainLM}, 2024.
+
+\bibitem[Balles and Hennig(2020)]{balles2020dissectingadamsignmagnitude}
+Lukas Balles and Philipp Hennig.
+\newblock Dissecting adam: The sign, magnitude and variance of stochastic
+  gradients, 2020.
+\newblock URL \url{https://arxiv.org/abs/1705.07774}.
+
+\bibitem[Bernstein and Newhouse(2024)]{bernstein2024oldoptimizernewnorm}
+Jeremy Bernstein and Laker Newhouse.
+\newblock Old optimizer, new norm: An anthology, 2024.
+\newblock URL \url{https://arxiv.org/abs/2409.20325}.
+
+\bibitem[Bradbury et~al.(2018)Bradbury, Frostig, Hawkins, Johnson, Leary,
+  Maclaurin, Necula, Paszke, Vander{P}las, Wanderman-{M}ilne, and
+  Zhang]{jax2018github}
+James Bradbury, Roy Frostig, Peter Hawkins, Matthew~James Johnson, Chris Leary,
+  Dougal Maclaurin, George Necula, Adam Paszke, Jake Vander{P}las, Skye
+  Wanderman-{M}ilne, and Qiao Zhang.
+\newblock {JAX}: composable transformations of {P}ython+{N}um{P}y programs,
+  2018.
+\newblock URL \url{http://github.com/jax-ml/jax}.
+
+\bibitem[Dao et~al.(2022)Dao, Fu, Ermon, Rudra, and
+  Ré]{dao2022flashattentionfastmemoryefficientexact}
+Tri Dao, Daniel~Y. Fu, Stefano Ermon, Atri Rudra, and Christopher Ré.
+\newblock Flashattention: Fast and memory-efficient exact attention with
+  io-awareness, 2022.
+\newblock URL \url{https://arxiv.org/abs/2205.14135}.
+
+\bibitem[Dosovitskiy et~al.(2021)Dosovitskiy, Beyer, Kolesnikov, Weissenborn,
+  Zhai, Unterthiner, Dehghani, Minderer, Heigold, Gelly, Uszkoreit, and
+  Houlsby]{dosovitskiy2021imageworth16x16words}
+Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn,
+  Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg
+  Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby.
+\newblock An image is worth 16x16 words: Transformers for image recognition at
+  scale, 2021.
+\newblock URL \url{https://arxiv.org/abs/2010.11929}.
+
+\bibitem[Défossez et~al.(2022)Défossez, Bottou, Bach, and
+  Usunier]{defossez2022simpleconvergenceproofadam}
+Alexandre Défossez, Léon Bottou, Francis Bach, and Nicolas Usunier.
+\newblock A simple convergence proof of adam and adagrad, 2022.
+\newblock URL \url{https://arxiv.org/abs/2003.02395}.
+
+\bibitem[He et~al.(2015)He, Zhang, Ren, and
+  Sun]{he2015deepresiduallearningimage}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition, 2015.
+\newblock URL \url{https://arxiv.org/abs/1512.03385}.
+
+\bibitem[Hendrycks and Dietterich(2019)]{hendrycks2019benchmarking}
+Dan Hendrycks and Thomas Dietterich.
+\newblock Benchmarking neural network robustness to common corruptions and
+  perturbations.
+\newblock \emph{arXiv preprint arXiv:1903.12261}, 2019.
+
+\bibitem[John(2021)]{john2021adamdimprovedbiascorrectionadam}
+John~St John.
+\newblock Adamd: Improved bias-correction in adam, 2021.
+\newblock URL \url{https://arxiv.org/abs/2110.10828}.
+
+\bibitem[Karpathy(2022)]{Karpathy2022}
+Andrej Karpathy.
+\newblock \text{NanoGPT}.
+\newblock \url{https://github.com/karpathy/nanoGPT}, 2022.
+
+\bibitem[Kingma and Ba(2017)]{kingma2017adammethodstochasticoptimization}
+Diederik~P. Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization, 2017.
+\newblock URL \url{https://arxiv.org/abs/1412.6980}.
+
+\bibitem[Krizhevsky and Hinton(2009)]{krizhevsky2009learning}
+Alex Krizhevsky and Geoffrey Hinton.
+\newblock Learning multiple layers of features from tiny images.
+\newblock 2009.
+
+\bibitem[Li et~al.(2023)Li, Rakhlin, and
+  Jadbabaie]{li2023convergenceadamrelaxedassumptions}
+Haochuan Li, Alexander Rakhlin, and Ali Jadbabaie.
+\newblock Convergence of adam under relaxed assumptions, 2023.
+\newblock URL \url{https://arxiv.org/abs/2304.13972}.
+
+\bibitem[Loshchilov and
+  Hutter(2017)]{loshchilov2017sgdrstochasticgradientdescent}
+Ilya Loshchilov and Frank Hutter.
+\newblock Sgdr: Stochastic gradient descent with warm restarts, 2017.
+\newblock URL \url{https://arxiv.org/abs/1608.03983}.
+
+\bibitem[Loshchilov and
+  Hutter(2019)]{loshchilov2019decoupledweightdecayregularization}
+Ilya Loshchilov and Frank Hutter.
+\newblock Decoupled weight decay regularization, 2019.
+\newblock URL \url{https://arxiv.org/abs/1711.05101}.
+
+\bibitem[Orvieto and Gower(2025)]{orvieto2025searchadamssecretsauce}
+Antonio Orvieto and Robert Gower.
+\newblock In search of adam's secret sauce, 2025.
+\newblock URL \url{https://arxiv.org/abs/2505.21829}.
+
+\bibitem[Paszke et~al.(2019)Paszke, Gross, Massa, Lerer, Bradbury, Chanan,
+  Killeen, Lin, Gimelshein, Antiga, Desmaison, Köpf, Yang, DeVito, Raison,
+  Tejani, Chilamkurthy, Steiner, Fang, Bai, and
+  Chintala]{paszke2019pytorchimperativestylehighperformance}
+Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory
+  Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, Alban
+  Desmaison, Andreas Köpf, Edward Yang, Zach DeVito, Martin Raison, Alykhan
+  Tejani, Sasank Chilamkurthy, Benoit Steiner, Lu~Fang, Junjie Bai, and Soumith
+  Chintala.
+\newblock Pytorch: An imperative style, high-performance deep learning library,
+  2019.
+\newblock URL \url{https://arxiv.org/abs/1912.01703}.
+
+\bibitem[Shazeer(2020)]{SwiGLU}
+Noam Shazeer.
+\newblock {GLU} variants improve transformer.
+\newblock \emph{CoRR}, abs/2002.05202, 2020.
+\newblock URL \url{https://arxiv.org/abs/2002.05202}.
+
+\bibitem[Shen et~al.(2024)Shen, Tao, Ma, Neiswanger, Liu, Wang, Tan, Hestness,
+  Vassilieva, Soboleva, and
+  Xing]{shen2024slimpajamadcunderstandingdatacombinations}
+Zhiqiang Shen, Tianhua Tao, Liqun Ma, Willie Neiswanger, Zhengzhong Liu, Hongyi
+  Wang, Bowen Tan, Joel Hestness, Natalia Vassilieva, Daria Soboleva, and Eric
+  Xing.
+\newblock Slimpajama-dc: Understanding data combinations for llm training,
+  2024.
+\newblock URL \url{https://arxiv.org/abs/2309.10818}.
+
+\bibitem[Su et~al.(2023)Su, Lu, Pan, Murtadha, Wen, and
+  Liu]{su2023roformerenhancedtransformerrotary}
+Jianlin Su, Yu~Lu, Shengfeng Pan, Ahmed Murtadha, Bo~Wen, and Yunfeng Liu.
+\newblock Roformer: Enhanced transformer with rotary position embedding, 2023.
+\newblock URL \url{https://arxiv.org/abs/2104.09864}.
+
+\bibitem[Zhang and Sennrich(2019)]{zhang2019rootmeansquarelayer}
+Biao Zhang and Rico Sennrich.
+\newblock Root mean square layer normalization, 2019.
+\newblock URL \url{https://arxiv.org/abs/1910.07467}.
+
+\bibitem[Zhang et~al.(2020)Zhang, Karimireddy, Veit, Kim, Reddi, Kumar, and
+  Sra]{zhang2020adaptivemethodsgoodattention}
+Jingzhao Zhang, Sai~Praneeth Karimireddy, Andreas Veit, Seungyeon Kim,
+  Sashank~J Reddi, Sanjiv Kumar, and Suvrit Sra.
+\newblock Why are adaptive methods good for attention models?, 2020.
+\newblock URL \url{https://arxiv.org/abs/1912.03194}.
+
+\end{thebibliography}

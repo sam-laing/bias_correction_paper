@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: neurips_2025.aux
+The style file: plainnat.bst
+Database file #1: bibliography.bib
+Warning--entry type for "jax2018github" isn't style-file defined
+--line 350 of file bibliography.bib
+Warning--empty journal in krizhevsky2009learning
+You've used 24 entries,
+            2773 wiz_defined-function locations,
+            705 strings with 10286 characters,
+and the built_in function-call counts, 13584 in all, are:
+= -- 1044
+> -- 1378
+< -- 13
++ -- 462
+- -- 438
+* -- 1188
+:= -- 2205
+add.period$ -- 74
+call.type$ -- 24
+change.case$ -- 218
+chr.to.int$ -- 24
+cite$ -- 49
+duplicate$ -- 383
+empty$ -- 774
+format.name$ -- 480
+if$ -- 2723
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 3
+newline$ -- 130
+num.names$ -- 96
+pop$ -- 502
+preamble$ -- 1
+purify$ -- 194
+quote$ -- 0
+skip$ -- 472
+stack$ -- 0
+substring$ -- 48
+swap$ -- 23
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 264
+warning$ -- 1
+while$ -- 72
+width$ -- 0
+write$ -- 299
+(There were 2 warnings)

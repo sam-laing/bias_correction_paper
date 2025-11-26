@@ -1,0 +1,107 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{kingma2017adammethodstochasticoptimization}
+\citation{loshchilov2019decoupledweightdecayregularization}
+\citation{jax2018github}
+\citation{paszke2019pytorchimperativestylehighperformance}
+\citation{tensorflow2015-whitepaper}
+\citation{balles2020dissectingadamsignmagnitude}
+\citation{li2023convergenceadamrelaxedassumptions}
+\citation{bernstein2024oldoptimizernewnorm}
+\citation{defossez2022simpleconvergenceproofadam}
+\citation{orvieto2025searchadamssecretsauce}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{eq: full adam}{{1}{1}{Introduction}{equation.1.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Background and Related Work}{1}{section*.1}\protected@file@percent }
+\citation{ajroldi2024plainlm}
+\citation{Karpathy2022}
+\citation{zhang2019rootmeansquarelayer}
+\citation{SwiGLU}
+\citation{dao2022flashattentionfastmemoryefficientexact}
+\citation{su2023roformerenhancedtransformerrotary}
+\citation{shen2024slimpajamadcunderstandingdatacombinations}
+\citation{loshchilov2017sgdrstochasticgradientdescent}
+\citation{zhang2020adaptivemethodsgoodattention}
+\citation{orvieto2025searchadamssecretsauce}
+\@writefile{toc}{\contentsline {paragraph}{A Discussion of the ``Proof'' for Bias Correction}{2}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Contributions}{2}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Experiments}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Language Model Training Details}{2}{section*.4}\protected@file@percent }
+\citation{john2021adamdimprovedbiascorrectionadam}
+\citation{defossez2022simpleconvergenceproofadam}
+\citation{kingma2017adammethodstochasticoptimization}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces  Sensitivity to learning rate for AdamW with and without bias correction (orange and blue respectively). The plots show final validation perplexity (y-axis) across a range of learning rates (x-axis, log-scale). Results are averaged over $3$ random seeds.\\ With warm-up cosine scheduling, removing bias correction increases sensitivity for default hyperparameters $(\beta _1,\beta _2)=(0.9,0.999)$ but with identical optimal performance. For the LM-optimal setting $(\beta _1, \beta _2) = (0.95, 0.95)$, performance is identical. \\ With a fixed learning rate, the inclusion of bias correction has a more pronounced effect. In the default torch setting $(0.9, 0.999)$, excluding bias correction has a detrimental effect whereas for the LM-optimal setting $(0.95, 0.95)$, bias correction slightly degrades optimal performance. }}{3}{figure.1}\protected@file@percent }
+\newlabel{fig: ppl_panel999}{{1}{3}{Sensitivity to learning rate for AdamW with and without bias correction (orange and blue respectively). The plots show final validation perplexity (y-axis) across a range of learning rates (x-axis, log-scale). Results are averaged over $3$ random seeds.\\ With warm-up cosine scheduling, removing bias correction increases sensitivity for default hyperparameters $(\beta _1,\beta _2)=(0.9,0.999)$ but with identical optimal performance. For the LM-optimal setting $(\beta _1, \beta _2) = (0.95, 0.95)$, performance is identical. \\ With a fixed learning rate, the inclusion of bias correction has a more pronounced effect. In the default torch setting $(0.9, 0.999)$, excluding bias correction has a detrimental effect whereas for the LM-optimal setting $(0.95, 0.95)$, bias correction slightly degrades optimal performance}{figure.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Vision Models}{3}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Bias Correction as Implicit Learning Rate Scheduling}{3}{section.3}\protected@file@percent }
+\newlabel{eq: bias factor}{{3}{3}{Bias Correction as Implicit Learning Rate Scheduling}{equation.3.3}{}}
+\bibstyle{plainnat}
+\bibdata{bibliography}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces  Comparison of the effective learning rate when bias correction is applied for $(\beta _1, \beta _2) = (0.9, 0.999)$ (green) and $(\beta _1, \beta _2) = (0.95, 0.95)$ (red) under both warm-up cosine scheduling (left) and a constant learning rate (right).\\ With warm-up cosine scheduling, the bias correction factor is effectively absorbed for the LM-optimal setting $(0.95, 0.95)$ (the true warmup cosine schedule is indistinguishable from the red curve), whereas for the default setting $(0.9, 0.999)$ it substantially modifies the effective learning rate, lowering the peak value. Without scheduling, the torch default configuration exhibits a very gradual warm-up on effect on the effective learning rate, while the LM-optimal setting produces an initial spike that quickly decays to the nominal learning rate. }}{4}{figure.2}\protected@file@percent }
+\newlabel{fig: effective_lr4800}{{2}{4}{Comparison of the effective learning rate when bias correction is applied for $(\beta _1, \beta _2) = (0.9, 0.999)$ (green) and $(\beta _1, \beta _2) = (0.95, 0.95)$ (red) under both warm-up cosine scheduling (left) and a constant learning rate (right).\\ With warm-up cosine scheduling, the bias correction factor is effectively absorbed for the LM-optimal setting $(0.95, 0.95)$ (the true warmup cosine schedule is indistinguishable from the red curve), whereas for the default setting $(0.9, 0.999)$ it substantially modifies the effective learning rate, lowering the peak value. Without scheduling, the torch default configuration exhibits a very gradual warm-up on effect on the effective learning rate, while the LM-optimal setting produces an initial spike that quickly decays to the nominal learning rate}{figure.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion}{4}{section.4}\protected@file@percent }
+\bibcite{tensorflow2015-whitepaper}{{1}{2015}{{Abadi et~al.}}{{Abadi, Agarwal, Barham, Brevdo, Chen, Citro, Corrado, Davis, Dean, Devin, Ghemawat, Goodfellow, Harp, Irving, Isard, Jia, Jozefowicz, Kaiser, Kudlur, Levenberg, Man\'{e}, Monga, Moore, Murray, Olah, Schuster, Shlens, Steiner, Sutskever, Talwar, Tucker, Vanhoucke, Vasudevan, Vi\'{e}gas, Vinyals, Warden, Wattenberg, Wicke, Yu, and Zheng}}}
+\bibcite{ajroldi2024plainlm}{{2}{2024}{{Ajroldi}}{{}}}
+\bibcite{balles2020dissectingadamsignmagnitude}{{3}{2020}{{Balles and Hennig}}{{}}}
+\bibcite{bernstein2024oldoptimizernewnorm}{{4}{2024}{{Bernstein and Newhouse}}{{}}}
+\bibcite{jax2018github}{{5}{2018}{{Bradbury et~al.}}{{Bradbury, Frostig, Hawkins, Johnson, Leary, Maclaurin, Necula, Paszke, Vander{P}las, Wanderman-{M}ilne, and Zhang}}}
+\bibcite{dao2022flashattentionfastmemoryefficientexact}{{6}{2022}{{Dao et~al.}}{{Dao, Fu, Ermon, Rudra, and Ré}}}
+\bibcite{dosovitskiy2021imageworth16x16words}{{7}{2021}{{Dosovitskiy et~al.}}{{Dosovitskiy, Beyer, Kolesnikov, Weissenborn, Zhai, Unterthiner, Dehghani, Minderer, Heigold, Gelly, Uszkoreit, and Houlsby}}}
+\bibcite{defossez2022simpleconvergenceproofadam}{{8}{2022}{{Défossez et~al.}}{{Défossez, Bottou, Bach, and Usunier}}}
+\bibcite{he2015deepresiduallearningimage}{{9}{2015}{{He et~al.}}{{He, Zhang, Ren, and Sun}}}
+\bibcite{hendrycks2019benchmarking}{{10}{2019}{{Hendrycks and Dietterich}}{{}}}
+\bibcite{john2021adamdimprovedbiascorrectionadam}{{11}{2021}{{John}}{{}}}
+\bibcite{Karpathy2022}{{12}{2022}{{Karpathy}}{{}}}
+\bibcite{kingma2017adammethodstochasticoptimization}{{13}{2017}{{Kingma and Ba}}{{}}}
+\bibcite{krizhevsky2009learning}{{14}{2009}{{Krizhevsky and Hinton}}{{}}}
+\bibcite{li2023convergenceadamrelaxedassumptions}{{15}{2023}{{Li et~al.}}{{Li, Rakhlin, and Jadbabaie}}}
+\bibcite{loshchilov2017sgdrstochasticgradientdescent}{{16}{2017}{{Loshchilov and Hutter}}{{}}}
+\bibcite{loshchilov2019decoupledweightdecayregularization}{{17}{2019}{{Loshchilov and Hutter}}{{}}}
+\bibcite{orvieto2025searchadamssecretsauce}{{18}{2025}{{Orvieto and Gower}}{{}}}
+\bibcite{paszke2019pytorchimperativestylehighperformance}{{19}{2019}{{Paszke et~al.}}{{Paszke, Gross, Massa, Lerer, Bradbury, Chanan, Killeen, Lin, Gimelshein, Antiga, Desmaison, Köpf, Yang, DeVito, Raison, Tejani, Chilamkurthy, Steiner, Fang, Bai, and Chintala}}}
+\bibcite{SwiGLU}{{20}{2020}{{Shazeer}}{{}}}
+\bibcite{shen2024slimpajamadcunderstandingdatacombinations}{{21}{2024}{{Shen et~al.}}{{Shen, Tao, Ma, Neiswanger, Liu, Wang, Tan, Hestness, Vassilieva, Soboleva, and Xing}}}
+\bibcite{su2023roformerenhancedtransformerrotary}{{22}{2023}{{Su et~al.}}{{Su, Lu, Pan, Murtadha, Wen, and Liu}}}
+\bibcite{zhang2019rootmeansquarelayer}{{23}{2019}{{Zhang and Sennrich}}{{}}}
+\bibcite{zhang2020adaptivemethodsgoodattention}{{24}{2020}{{Zhang et~al.}}{{Zhang, Karimireddy, Veit, Kim, Reddi, Kumar, and Sra}}}
+\citation{krizhevsky2009learning}
+\citation{dosovitskiy2021imageworth16x16words}
+\citation{he2015deepresiduallearningimage}
+\citation{hendrycks2019benchmarking}
+\citation{loshchilov2017sgdrstochasticgradientdescent}
+\citation{he2015deepresiduallearningimage}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Additional Experiments in the Vision Setting}{7}{appendix.A}\protected@file@percent }
+\newlabel{sec: vision}{{A}{7}{Additional Experiments in the Vision Setting}{appendix.A}{}}
+\@writefile{toc}{\contentsline {paragraph}{Vision Training Setup}{7}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Experimental Results}{7}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Takeaway}{7}{section*.10}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces ResNet9 on CIFAR-10.}}{7}{figure.3}\protected@file@percent }
+\newlabel{fig:resnet9_cifar10}{{3}{7}{ResNet9 on CIFAR-10}{figure.3}{}}
+\newlabel{fig: sensitivity_tinyimgnet}{{A}{7}{Takeaway}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces ResNet50 on Tiny ImageNet.}}{8}{figure.4}\protected@file@percent }
+\newlabel{fig:resnet50_tinyimgnet}{{4}{8}{ResNet50 on Tiny ImageNet}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces ViT on Tiny ImageNet}}{8}{figure.5}\protected@file@percent }
+\newlabel{fig:vit_tinyimgnet}{{5}{8}{ViT on Tiny ImageNet}{figure.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}A Closer Look at the $\beta _1 = \beta _2$ Setting}{9}{appendix.B}\protected@file@percent }
+\newlabel{sec: b1isb2}{{B}{9}{A Closer Look at the $\beta _1 = \beta _2$ Setting}{appendix.B}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces  Sensitivity curves comparing performance with and without bias correction (orange and blue respectively) for the case that $\beta _1 = \beta _2$. The x-axis represents the learning rate (log scale) and the y-axis the final validation perplexity. \\ With warm-up cosine scheduling, the inclusion of bias correction does not effect final validation perplexity across all learning rates.\\ In contrast, with constant learning rate, bias correction actually denigrates performance, progressively more for larger values of $\beta _1 = \beta _2$ -- with bias correction always performing worse. }}{10}{figure.6}\protected@file@percent }
+\newlabel{fig: ppl_panel}{{6}{10}{Sensitivity curves comparing performance with and without bias correction (orange and blue respectively) for the case that $\beta _1 = \beta _2$. The x-axis represents the learning rate (log scale) and the y-axis the final validation perplexity. \\ With warm-up cosine scheduling, the inclusion of bias correction does not effect final validation perplexity across all learning rates.\\ In contrast, with constant learning rate, bias correction actually denigrates performance, progressively more for larger values of $\beta _1 = \beta _2$ -- with bias correction always performing worse}{figure.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Plot of the \textit  {bias correction} factor the first $100$ steps for $\beta = \beta _1 = \beta _2$\\ As we can see, the behaviour for different $\beta $ values is similar, but larger values require more iterations to decay to $1$.}}{11}{figure.7}\protected@file@percent }
+\newlabel{fig: b1_is_b2}{{7}{11}{Plot of the \textit {bias correction} factor the first $100$ steps for $\beta = \beta _1 = \beta _2$\\ As we can see, the behaviour for different $\beta $ values is similar, but larger values require more iterations to decay to $1$}{figure.7}{}}
+\gdef \@abspage@last{11}
